@@ -1,0 +1,24 @@
+﻿<pu:WindowX x:Class="Saber_Minecraft_Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Saber_Minecraft_Launcher"
+        mc:Ignorable="d"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        Title="SML I" Height="450" Width="800">
+    <Grid>
+        <ComboBox Height="30"
+              Width="200"
+              HorizontalAlignment="Left"
+              x:Name="versionCombo"
+              VerticalAlignment="Top"
+              pu:ComboBoxHelper.Header="Select one : "
+              DisplayMemberPath="Id"
+              pu:ComboBoxHelper.ItemHeight="30" Margin="550,64,0,0"/>
+        <Button
+            Content="启动"
+            pu:ButtonHelper.ButtonStyle="Outline"
+            pu:ButtonHelper.CornerRadius="15" Margin="60,315,604,65" FontSize="18" IsDefault="True" Click="Button_Click"/>
+    </Grid>
+</pu:WindowX>
